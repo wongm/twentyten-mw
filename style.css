@@ -348,7 +348,6 @@ a:hover {
 	font-size: 30px;
 	line-height: 36px;
 	margin: 0 0 18px 0;
-	width: 500px;
 }
 #site-title a {
 	color: #000;
@@ -362,7 +361,6 @@ a:hover {
 	text-align: right;
 	font-style: italic;
 	margin: 15px 0 18px 0;
-	width: 420px;
 }
 
 /* This is the custom header image */
@@ -1392,3 +1390,279 @@ code {
 		border: none;
 	}
 }
+
+
+/*
+Theme Name: Responsive TwentyTen
+Theme URI: http://responsivetwentyten.com/
+Description: Responsive child theme for default TwentyTen. Provides fluid layout for many browsers including mobile support for iPhone, iPad and Android. Being a child theme, it is dependent on the TwentyTen theme as a parent.
+Author: Dan Gavin & Sara Cannon (props to Todd Halfpenny)
+Author URI: http://responsivetwentyten.org/
+Version: 1.0.2
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Template: twentyten
+Tags: black, blue, white, two-columns, flexible-width, custom-header, custom-background, theme-options, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style
+*/
+
+/*
+Notes: You shouldn't really have to mess with anything down here. Unless you are drastically chaning the Twenty Ten theme.
+	
+/* --------------------------------------------------------*/
+/*-----------------MMMMM----------MMMMM----E---------------*/
+/*-----------------MMMMMM--------MMMMMM------D-------------*/
+/*-----------------MMMMMMM------MMMMMMM----Q---I-----------*/
+/*-----------------MMMMMMMM----MMMMMMMM------U---A---------*/
+/*-----------------MMMMMMMMM--MMMMMMMMM--------E-----------*/
+/*-----------------MMMM-MMMMMMMMMM-MMMM----------R---------*/
+/*-----------------MMMM--MMMMMMMM--MMMM------------I-------*/
+/*-----------------MMMM---MMMMMM---MMMM--------------E-----*/
+/*-----------------MMMM----MMMM----MMMM----------------S---*/
+/*-----------------MMMM------------MMMM--------------------*/
+/*-----------------MMMM------------MMMM--------------------*/
+/*-----------------MMMM------------MMMM--------------------*/
+/*-----------------MMMM------------MMMM--------------------*/
+/*-----------------MMMM------------MMMM--------------------*/
+/* --------------------------------------------------------*/
+
+@media only screen and (min-width: 481px) and (max-width: 1024px){
+	#wrapper {
+		margin: 20px auto;
+		width: 90%;
+	}
+	  
+	#access,
+	#access .menu-header,
+	div.menu,
+	#colophon,
+	#branding,
+	#main,
+	#footer {
+	    margin: 0 auto;
+	    width: 100%;
+	}
+	  
+	#branding{
+		overflow: hidden;
+	}
+	
+	/*
+	LAYOUT: Responsive Images & Video
+	DESCRIPTION: Responsive.
+	*/
+	#content img {
+		margin: 0;
+		height: auto;
+		max-width: 100%;
+		width: auto;
+	}
+	
+	img, object, embed, iframe, #content .wp-caption {
+		max-width: 100%;
+	}
+	
+	#content .wp-caption img{
+		max-width: 95%;
+	}
+	  
+	/*
+	LAYOUT: Two columns
+	DESCRIPTION: Responsive.
+	940 = 720 + 220
+	100% = 76.5957447% + 23.40425535% 
+	*/
+	
+	#container {
+		float: left;
+		margin: 0 -25.5319149% 0 0;
+		width: 99%;
+	}
+	#content {
+		width: 68.5957447%;
+		/*margin: 0 29.787234% 0 20px;*/
+		margin: 0 29.787234% 0 20px;
+	}
+	#primary,
+	#secondary {
+		overflow: hidden;
+		width: 23.40425535% /* 200px / 940px */ 
+	}
+	
+	#footer-widget-area .widget-area,
+	#site-generator  {
+		width: 23.40425535% /* 200px / 940px */ 
+	}
+
+} /* This belongs here. It goes to @media only screen and (min-width: 481px) and (max-width: 1024px) */
+
+@media screen and (max-width: 660px) {
+	#wrapper {
+		margin: 5px auto;
+		width: 90%;
+		padding: 0 3%;
+	}
+	
+	#access,
+	#access .menu-header,
+	div.menu,
+	#colophon,
+	#branding,
+	#main,
+	#footer {
+		margin: 0 auto;
+		width: 100%;
+	}
+	
+	#branding  {
+		overflow:hidden;
+	}
+	
+	#site-title {
+		width: 100%;
+	}
+	
+	#container {
+		float: left;
+		width: 100%;
+		overflow: auto;
+	}
+	
+	#content {
+		width: 99%;
+		margin: 0 0px 0 0px;
+	}
+	
+	#primary,
+	#secondary {
+		float: left;
+		overflow: hidden;
+		width: 99%; 
+	}
+	#secondary {
+		clear: left;
+	}
+	
+	#site-generator, #site-description, #site-info, #site-title {
+		clear: left;
+		float: left;
+		padding: 0;
+		margin: 0 0 10px;
+		text-align: left;
+		line-height: 1em;
+	}
+	
+	/*
+	LAYOUT: Responsive Images
+	DESCRIPTION: Responsive.
+	*/
+	  
+	#content img {
+		margin: 0;
+		height: auto;
+		max-width: 100%;
+		width: auto;
+	}
+	
+	img, object, embed, #content .wp-caption {
+		max-width: 100%;
+	}
+	
+	#content .wp-caption{
+		width: 100%;
+	}
+	
+	#content .wp-caption img{
+		max-width: 90%;
+	}
+	
+	#content .wp-caption.alignleft{
+		float: left;
+	}
+	#content .wp-caption.alignright{
+		float: right;
+	}
+	#content .alignleft,
+	#content img.alignleft {
+		display: block;
+		float: none;
+		margin: 0px auto;
+		padding: 0px 0px 5px 0px;
+	}
+	#content .alignright,
+	#content img.alignright {
+		display: block;
+		float: none;
+		margin: 0px auto;
+		padding: 0px 0px 5px 0px;
+	}
+
+} /* @media screen and (max-width: 660px) */
+
+
+/*
+/* We left these here for you incase you needed them. You do not need to add anything for the Videos or Images.
+/*
+/*
+/* Media = iPad orientation: landscape */
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+	
+}/* This belongs here. It goes to @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) */
+
+/*--------------------------------------------------------------------------------*/
+
+/* Media = iPad orientation: portrait */
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+
+}/* This belongs here. It goes to @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) */
+
+/*--------------------------------------------------------------------------------*/
+
+/* Media = Mobile - iPhone */
+
+@media handheld, only screen and (max-device-width: 480px) {
+	iframe, object, embed{
+		width: 100%;
+		height: auto;
+	}
+	#content pre {
+		font-size: 60%;
+		overflow: hidden;
+		padding: 1em;
+	}
+	
+	#content code {
+		font-size: 50%;
+		margin-bottom: 24px;
+	}
+}/* This belongs here. It goes to @media handheld, only screen and (max-device-width: 480px) */
+	
+/* Media = Mobile - All Others - orientation:portrait */
+
+@media handheld, only screen and (max-device-width: 480px) and (orientation:portrait) {
+	iframe, object, embed{
+		width: 100%;
+		height: auto;
+	}
+	
+	#content pre {
+		font-size: 80%;
+		overflow: hidden;
+		padding: 1em;
+	}
+
+	#content code {
+		font-size: 50%;
+		margin-bottom: 24px;
+	}
+}/* @media handheld, only screen and (max-device-width: 480px) and (orientation:portrait) */
+
+/* Media = Mobile - All Others - orientation:landscape */
+
+@media handheld, only screen and (max-device-width: 767px) and (orientation:landscape) {
+	iframe, object, embed{
+		width: 100%;
+		height: auto;
+	}
+}/* This belongs here. It goes to @media handheld, only screen and (max-device-width: 767px) and (orientation:landscape) */
