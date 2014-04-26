@@ -145,7 +145,7 @@ h3#reply-title,
 .wp-caption-text {
 	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
 }
-input[type=submit] {
+input[type="submit"] {
 	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
 }
 pre {
@@ -307,6 +307,10 @@ sub {
 	top: .5ex;
 }
 input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+input[type="number"],
 textarea {
 	background: #f9f9f9;
 	border: 1px solid #ccc;
@@ -725,6 +729,9 @@ body.page .edit-link {
 	clear: both;
     display: block;
 }
+.sharedaddy {
+	display: none;
+}
 
 /* =Asides
 -------------------------------------------------------------- */
@@ -793,7 +800,8 @@ img.size-auto,
 img.size-full,
 img.size-large,
 img.size-medium,
-.attachment img {
+.attachment img,
+.widget-container img {
 	max-width: 100%; /* When images are too wide for containing element, force them to fit. */
 	height: auto; /* Override height to match resized width for correct aspect ratio. */
 }
@@ -1056,7 +1064,7 @@ a.comment-edit-link:hover {
 }
 
 /* Comments form */
-input[type=submit] {
+input[type="submit"] {
 	color: #333;
 }
 #respond {
@@ -1144,7 +1152,14 @@ h3#reply-title {
 	display: none;
 }
 .widget-container {
+	word-wrap: break-word;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
 	margin: 0 0 18px 0;
+}
+.widget-container .wp-caption img {
+	margin: auto;
 }
 .widget-title {
 	color: #222;
@@ -1262,6 +1277,11 @@ h3#reply-title {
 img#wpstats {
 	display: block;
 	margin: 0 auto 10px;
+}
+img + a.read-more {
+	float: left;
+	margin: 2px 0 15px;
+	width: 100%;
 }
 
 
