@@ -935,7 +935,23 @@ img.aligncenter {
 	margin: -18px 0 0 0;
 }
 
+/* =Related
+-------------------------------------------------------------- */
+.yarpp-related {
+    margin: 1em 0 !important;
+}
+.yarpp-related ol {
+    list-style: square outside none;
+}
+.yarpp-related h3 {
+	font-family: "Helvetica Neue",Arial,Helvetica,"Nimbus Sans L",sans-serif !important;
+	color: #000;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 0;
+}
 
+*/
 /* =Comments
 -------------------------------------------------------------- */
 #comments {
@@ -950,9 +966,6 @@ h3#reply-title {
 	font-size: 20px;
 	font-weight: bold;
 	margin-bottom: 0;
-}
-h3#related-posts {
-	font-family: "Helvetica Neue",Arial,Helvetica,"Nimbus Sans L",sans-serif;
 }
 h3#comments-title {
 	padding: 24px 0;
