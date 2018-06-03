@@ -32,7 +32,7 @@ function twentyten_mw_auto_excerpt_more( $more ) {
 
 function twentyten_mw_custom_excerpt_more( $output ) {
 	if ( !is_attachment() && function_exists("has_post_thumbnail") && has_post_thumbnail() && strpos($output, '<img src') == false ) {
-		$output .= "<p>" . get_the_post_thumbnail(get_the_ID(), '500w', array("style" => "max-width: 500px; height: auto;")) . "</p>";
+		return $output . "<p>" . get_the_post_thumbnail(get_the_ID(), '500w', array("style" => "max-width: 500px; height: auto;")) . twentyten_mw_continue_reading_link() . "</p>";
 	}
 	return $output.= twentyten_mw_continue_reading_link();
 }
