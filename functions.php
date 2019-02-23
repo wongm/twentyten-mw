@@ -46,5 +46,13 @@ add_action( 'after_setup_theme', 'turnoff_twentyten_auto_excerpt_more' );
 add_filter( 'excerpt_more', 'twentyten_mw_auto_excerpt_more' );
 add_filter( 'get_the_excerpt', 'twentyten_mw_custom_excerpt_more' );
 
-?>
+add_action('get_header', 'enable_threaded_comments'); 
 
+function enable_threaded_comments() {
+    if (!is_admin()) {
+        if (is_singular() && comments_open() && (get_option('thread_comments') == 1))
+            wp_enqueue_script('comment-reply');
+    }
+}
+
+?>
