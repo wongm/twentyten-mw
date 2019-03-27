@@ -14,6 +14,15 @@ function twentyten_mw_continue_reading_link() {
 endif;
 
 /**
+ * add search in menu bar.
+ */
+add_filter( 'wp_nav_menu_items','add_search_box', 10, 2 );
+function add_search_box( $items, $args ) {
+$items .= '<li id="menu-search">' . get_search_form( false ) . '</li>';
+	return $items;
+};
+
+/**
  * Replace "[...]" with an ellipsis and twentyten_continue_reading_link().
  *
  * "[...]" is appended to automatically generated excerpts.

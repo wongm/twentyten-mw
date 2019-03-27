@@ -951,7 +951,6 @@ img.aligncenter {
 	margin-bottom: 0;
 }
 
-*/
 /* =Comments
 -------------------------------------------------------------- */
 #comments {
@@ -1679,3 +1678,16 @@ Notes: You shouldn't really have to mess with anything down here. Unless you are
 		height: auto;
 	}
 }/* This belongs here. It goes to @media handheld, only screen and (max-device-width: 767px) and (orientation:landscape) */
+
+#access li#menu-search {
+    float: right;
+    line-height: 38px;
+    padding-right: 7px;
+}
+
+@media only screen and (max-device-width: 767px) {	
+	#access li#menu-search {
+		width: 100%;
+		text-align: center;
+	}
+}
