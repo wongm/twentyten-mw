@@ -1,5 +1,13 @@
 <?php 
 
+/*
+ * Set the content width based on the theme's design and stylesheet.
+ *
+ * Used to set the width of images and content. Should be equal to the width the theme
+ * is designed for, generally via the style.css stylesheet.
+ */
+$content_width = 500;
+
 if ( ! function_exists( 'twentyten_mw_continue_reading_link' ) ) :
 /**
  * Return a "Continue Reading" link for excerpts.

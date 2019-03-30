@@ -830,20 +830,14 @@ img.aligncenter {
 	margin-bottom: 12px;
 }
 .wp-caption {
-	background: #f1f1f1;
-	line-height: 18px;
-	margin-bottom: 20px;
-	max-width: 632px !important; /* prevent too-wide images from breaking layout */
-	padding: 4px;
-	text-align: center;
 }
 .wp-caption img {
-	margin: 5px 5px 0;
+}
+.wp-caption > p:empty  {
+    display: none;
 }
 .wp-caption p.wp-caption-text {
-	color: #888;
-	font-size: 12px;
-	margin: 5px;
+	font-size: smaller;
 }
 .wp-smiley {
 	margin: 0;
@@ -1373,9 +1367,6 @@ code {
 	.one-column #content {
 		margin: 24pt 0 0;
 		width: 100%;
-	}
-	.wp-caption p {
-		font-size: 11pt;
 	}
 	#site-info,
 	#site-generator {
