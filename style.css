@@ -1464,6 +1464,7 @@ Notes: You shouldn't really have to mess with anything down here. Unless you are
 	
 	img, object, embed, iframe, #content .wp-caption {
 		max-width: 100%;
+    	height: auto;
 	}
 	
 	#content .wp-caption img{
@@ -1683,4 +1684,10 @@ Notes: You shouldn't really have to mess with anything down here. Unless you are
 		width: 100%;
 		text-align: center;
 	}
+}
+
+
+
+.embed-youtube {
+	text-align: left !important;
 }
